@@ -16,23 +16,37 @@ export default function Home() {
         <button style={{ background: brand, color: "white", border: "none", padding: "10px 18px", borderRadius: "20px", fontWeight: "bold" }}>Join PLUS - R49/mo</button>
       </header>
 
-     <section style={{ padding: "10px 20px 60px 20px", textAlign: "center", display: "flex", flexDirection: "column", alignItems: "center" }}>
+  {/* HERO - IZIZWE FULL BACKGROUND */}
+<section style={{
+  minHeight: "85vh",
+  backgroundImage: "url(/izizwe.jpg)",
+  backgroundSize: "cover",
+  backgroundPosition: "center top",
+  display: "flex",
+  alignItems: "flex-end",
+  padding: "40px 20px 60px 20px",
+  position: "relative",
+  boxSizing: "border-box"
+}}>
+  {/* DARK FADE SO TEXT STAYS READABLE */}
+  <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,0.9) 5%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.4) 100%)" }} />
 
-  {/* LEFT - IZIZWE */}
-  <div style={{ flex: 1 }}>
-    <p style={{ color: brandLight, fontWeight: "bold", letterSpacing: "2px" }}>FEATURED ORIGINAL</p>
-    <h2 style={{ fontSize: "48px", margin: "8px 0" }}>Izizwe and the Odd Spirit</h2>
-    <p style={{ color: "#ccc", maxWidth: "500px" }}>Innocence tested. A film by Siyabonga Godfrey Dlamini.</p>
-    
+  {/* LEFT - TEXT FORWARD */}
+  <div style={{ position: "relative", zIndex: 2, maxWidth: "600px" }}>
+    <p style={{ color: brandLight, fontWeight: "bold", letterSpacing: "3px", margin: 0 }}>BLACKBURN PLUS ORIGINAL</p>
+    <h2 style={{ fontSize: "48px", margin: "10px 0" }}>Izizwe and the Odd Spirit</h2>
+    <p style={{ color: "#ccc", maxWidth: "500px", fontSize: "18px", lineHeight: "1.5" }}>Innocence turns evil when the night turns green.</p>
     <div style={{ marginTop: "20px", display: "flex", gap: "10px" }}>
-      <a href="https://youtu.be/hs1laCeB6M" target="_blank" style={{ background: brand, color: "white", padding: "12px 20px", borderRadius: "8px", textDecoration: "none", fontWeight: "bold" }}>▶ Watch Trailer</a>
-      <a href="https://youtu.be/DHLX15cAQ40" target="_blank" style={{ background: "white", color: "black", padding: "12px 20px", borderRadius: "8px", textDecoration: "none", fontWeight: "bold" }}>Watch Film</a>
+      <a href="https://youtu.be/hsI1aCeBGN0" target="_blank" style={{ background: "#fff", color: "#000", padding: "14px 28px", borderRadius: "6px", fontWeight: "bold", textDecoration: "none" }}>▶ Play Now</a>
+      <a href="https://youtu.be/DHLX15cAQ40" target="_blank" style={{ background: "rgba(255,255,255,0.25)", color: "#fff", padding: "14px 28px", borderRadius: "6px", textDecoration: "none" }}>Watch Trailer</a>
     </div>
   </div>
+</section>
+
 
   
   
-</section>
+
 {/* 1. BLACKBURN PLUS ORIGINALS */}
 <section style={{ padding: "20px" }}>
   <h3>Blackburn Plus Originals</h3>

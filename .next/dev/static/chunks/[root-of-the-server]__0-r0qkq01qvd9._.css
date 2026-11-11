@@ -404,6 +404,14 @@
     visibility: visible;
   }
 
+  .absolute {
+    position: absolute;
+  }
+
+  .relative {
+    position: relative;
+  }
+
   .block {
     display: block;
   }
