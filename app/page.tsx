@@ -1,9 +1,17 @@
-export default function Home() {
+"use client";
+import { useState } from "react";
+
+export default function Home() { 
+
+  const [showJoin, setShowJoin] = useState(false);
+const [isPlus, setIsPlus] = useState(false);
+
   const films = [
     { title: "Izizwe and the Odd Spirit", tag: "BLACKBURN+ Original", free: true },
-    { title: "Phoenix Rising", tag: "Waterloo 2026 Selection", free: true },
-    { title: "Verulam", tag: "Waterloo 2026 Selection", free: false },
-    { title: "KZN Directors Spotlight", tag: "Docs", free: true },
+   { title: "YOUR NEIGHBOURHOOD", tag: "Waterloo 2026 Selection", free: true, video: "https://customer-3i7s1ri7gs1vb7n1.cloudflarestream.com/b988d4fa48be8de4c813aff623500415/iframe" },
+{ title: "THE GRADUATE", tag: "Waterloo 2026 Selection", free: true, video: "https://customer-3i7s1ri7gs1vb7n1.cloudflarestream.com/5cca5934e039de74b29a7f40e74a6a77/iframe" },
+
+  
   ];
   const brand = "#68653D";
   const brandLight = "#9A9770";
@@ -13,7 +21,7 @@ export default function Home() {
       <header style={{ display: "flex", justifyContent: "space-between", padding: "20px", alignItems: "center" }}>
 <img src="/logo.png" alt="BLACKBURN+" style={{ width: "100%", maxWidth: "950px", height: "auto", objectFit: "contain" }} />
 
-        <button style={{ background: brand, color: "white", border: "none", padding: "10px 18px", borderRadius: "20px", fontWeight: "bold" }}>Join PLUS - R49/mo</button>
+<button onClick={() => setShowJoin(true)} style={{ background: brand, color: "white", border: "none", padding: "10px 18px", borderRadius: "20px", fontWeight: "bold", cursor: "pointer" }}>{isPlus ? "PLUS ACTIVE ✓" : "Join PLUS - R49/mo"}</button>
       </header>
 
   {/* HERO - IZIZWE FULL BACKGROUND */}
@@ -65,14 +73,20 @@ export default function Home() {
       <section style={{ padding: "20px" }}>
         <h3>Waterloo Film Festival</h3>
         <div style={{ display: "flex", gap: "15px", marginTop: "15px", overflowX: "auto" }}>
-          {films.map((f) => (
-            <div key={f.title} style={{ minWidth: "200px", background: "#1a1a1a", padding: "20px", borderRadius: "12px", borderTop: `3px solid ${brand}` }}>
-              <div style={{ height: "110px", background: "#333", borderRadius: "8px", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "32px" }}>🎬</div>
-              <h4 style={{ marginTop: "12px" }}>{f.title}</h4>
-              <p style={{ color: "#999", fontSize: "13px" }}>{f.tag}</p>
-              <p style={{ color: f.free ? "#4ade80" : brandLight, fontWeight: "bold", fontSize: "13px" }}>{f.free ? "FREE" : "PLUS R49"}</p>
-            </div>
-          ))}
+         {films.map((f) => (
+  <div key={f.title} style={{ minWidth: "200px", background: "#1a1a1a", padding: "10px", borderRadius: "10px" }}>
+    {f.video ? (
+      <iframe src={f.video} style={{ width: "100%", height: "160px", border: "none", borderRadius: "8px" }} allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" allowFullScreen={true}></iframe>
+    ) : (
+      <div style={{ height: "110px", background: "#333", borderRadius: "8px", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "30px" }}>🎬</div>
+    )}
+    <h4 style={{ marginTop: "12px" }}>{f.title}</h4>
+    <p style={{ color: "#999", fontSize: "13px" }}>{f.tag}</p>
+    <p style={{ color: f.free ? "#4ade80" : "#FFE600", fontWeight: "bold", fontSize: "13px" }}>{f.free ? "FREE" : "PLUS R49"}</p>
+    {f.video && <a href={f.video} target="_blank" style={{ display: "block", marginTop: "8px", background: "#00FF66", color: "#000", textAlign: "center", padding: "10px", borderRadius: "6px", fontWeight: "bold", textDecoration: "none" }}>▶ WATCH NOW</a>}
+  </div>
+))}
+ 
               
      </div>
       </section>{/* 3. PODCAST */}
@@ -102,6 +116,23 @@ export default function Home() {
     </div>
   </div>
 </section>
+
+   {showJoin && (
+  <div style={{ position: "fixed", top: 0, left: 0, right: 0, bottom: 0, background: "rgba(0,0,0,0.85)", display: "flex", alignItems: "center", justifyContent: "center", zIndex: 100 }}>
+    <div style={{ background: "#1a1a1a", padding: "25px", borderRadius: "12px", width: "90%", maxWidth: "400px", color: "#fff" }}>
+      <h3 style={{ margin: "0 0 5px 0" }}>Join BLACKBURN+</h3>
+      <p style={{ color: "#FFE600", fontWeight: "bold", margin: "0 0 15px 0" }}>7 DAYS FREE TRIAL • Then R49/mo • Cancel anytime</p>
+      <p style={{ fontSize: "13px", color: "#aaa" }}>Get access to ALL films, PLUS content, and Waterloo Festival films.</p>
+      <input placeholder="Your Name" style={{ width: "100%", padding: "12px", marginBottom: "10px", borderRadius: "6px", border: "none" }} />
+      <input placeholder="Email" style={{ width: "100%", padding: "12px", marginBottom: "10px", borderRadius: "6px", border: "none" }} />
+      <input placeholder="Phone / WhatsApp" style={{ width: "100%", padding: "12px", marginBottom: "15px", borderRadius: "6px", border: "none" }} />
+      <button onClick={() => { setIsPlus(true); setShowJoin(false); alert("Welcome to PLUS! Your 7-day free trial has started. You can now watch everything."); }} style={{ width: "100%", background: "#00FF66", color: "#000", padding: "14px", border: "none", borderRadius: "8px", fontWeight: "bold", cursor: "pointer" }}>
+        START 7-DAY FREE TRIAL
+      </button>
+      <button onClick={() => setShowJoin(false)} style={{ width: "100%", background: "transparent", color: "#aaa", padding: "10px", border: "none", cursor: "pointer", marginTop: "5px" }}>Close</button>
+    </div>
+  </div>
+)}
 
     </main>
   );
