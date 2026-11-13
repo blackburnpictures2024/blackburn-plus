@@ -7,7 +7,8 @@ export default function Home() {
 const [isPlus, setIsPlus] = useState(false);
 
   const films = [
-    { title: "Izizwe and the Odd Spirit", tag: "BLACKBURN+ Original", free: true },
+    { title: "Izizwe and the Odd Spirit", tag: "BLACKBURN+ Original", free: true, video: "https://customer-3i7s1ri7gs1vb7n1.cloudflarestream.com/263cec5098ad4ff3ce0b60eb0eef35c9/iframe"
+ },
    { title: "YOUR NEIGHBOURHOOD", tag: "Waterloo 2026 Selection", free: true, video: "https://customer-3i7s1ri7gs1vb7n1.cloudflarestream.com/b988d4fa48be8de4c813aff623500415/iframe" },
 { title: "THE GRADUATE", tag: "Waterloo 2026 Selection", free: true, video: "https://customer-3i7s1ri7gs1vb7n1.cloudflarestream.com/5cca5934e039de74b29a7f40e74a6a77/iframe" },
 

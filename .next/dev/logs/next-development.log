@@ -1,5 +1,25 @@
-{"timestamp":"00:00:00.569","source":"Server","level":"LOG","message":"- Cache Components enabled"}
-{"timestamp":"00:00:00.569","source":"Server","level":"LOG","message":"- Partial Prefetching enabled"}
-{"timestamp":"00:00:00.569","source":"Server","level":"LOG","message":"- Experiments (use with caution):"}
-{"timestamp":"00:00:00.569","source":"Server","level":"LOG","message":"  ✓ agentFeedback"}
-{"timestamp":"00:00:00.569","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:00.536","source":"Server","level":"LOG","message":"- Cache Components enabled"}
+{"timestamp":"00:00:00.536","source":"Server","level":"LOG","message":"- Partial Prefetching enabled"}
+{"timestamp":"00:00:00.536","source":"Server","level":"LOG","message":"- Experiments (use with caution):"}
+{"timestamp":"00:00:00.536","source":"Server","level":"LOG","message":"  ✓ agentFeedback"}
+{"timestamp":"00:00:00.536","source":"Server","level":"LOG","message":""}
+{"timestamp":"19:26:08.796","source":"Server","level":"LOG","message":"✓ Compiled in 164ms"}
+{"timestamp":"19:27:51.495","source":"Server","level":"LOG","message":"✓ Compiled in 155ms"}
+{"timestamp":"19:34:37.294","source":"Server","level":"LOG","message":"✓ Compiled in 115ms"}
+{"timestamp":"19:38:14.935","source":"Server","level":"LOG","message":"✓ Compiled in 16ms"}
+{"timestamp":"19:51:01.325","source":"Server","level":"LOG","message":"✓ Compiled in 117ms"}
+{"timestamp":"19:57:18.654","source":"Server","level":"LOG","message":"✓ Compiled in 104ms"}
+{"timestamp":"26:45:49.713","source":"Server","level":"LOG","message":"✓ Compiled in 112ms"}
+{"timestamp":"26:50:55.388","source":"Server","level":"LOG","message":"✓ Compiled in 110ms"}
+{"timestamp":"26:55:20.994","source":"Server","level":"LOG","message":"✓ Compiled in 18ms"}
+{"timestamp":"26:55:21.085","source":"Server","level":"ERROR","message":"⨯ ReferenceError: isPlus is not defined"}
+{"timestamp":"26:55:21.398","source":"Browser","level":"ERROR","message":"Uncaught ReferenceError: isPlus is not defined"}
+{"timestamp":"26:55:21.398","source":"Server","level":"ERROR","message":"[browser] \"\\u001b[31mUncaught ReferenceError: isPlus is not defined\\u001b[39m\""}
+{"timestamp":"26:55:58.344","source":"Server","level":"LOG","message":"✓ Compiled in 64ms"}
+{"timestamp":"27:03:53.283","source":"Server","level":"LOG","message":"✓ Compiled in 16ms"}
+{"timestamp":"27:03:53.338","source":"Server","level":"ERROR","message":"⨯ ReferenceError: useState is not defined"}
+{"timestamp":"27:03:53.413","source":"Browser","level":"ERROR","message":"Uncaught ReferenceError: useState is not defined"}
+{"timestamp":"27:03:53.414","source":"Server","level":"ERROR","message":"[browser] \"\\u001b[31mUncaught ReferenceError: useState is not defined\\u001b[39m\""}
+{"timestamp":"27:06:39.051","source":"Server","level":"WARN","message":"⚠ Fast Refresh had to perform a full reload due to a runtime error."}
+{"timestamp":"27:06:39.068","source":"Server","level":"LOG","message":"✓ Compiled in 202ms"}
+{"timestamp":"27:10:40.079","source":"Server","level":"LOG","message":"✓ Compiled in 56ms"}

@@ -1,3 +1,4 @@
 {
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/waterloo-film-festival/page": "app/waterloo-film-festival/page.js"
 }
