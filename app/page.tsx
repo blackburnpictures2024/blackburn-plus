@@ -15,7 +15,7 @@ const [isPlus, setIsPlus] = useState(false);
   { title: "THE SECOND", tag: "BLACKBURN Original", free: true, video: "https://customer-3i7s1ri7gs1vb7n1.cloudflarestream.com/67e8ee025cca8d5d3e6ca0ec1df26fc5/iframe" },
   { title: "AMAFUNAKONKE", tag: "BLACKBURN Original", free: true, video: "https://customer-3i7s1ri7gs1vb7n1.cloudflarestream.com/06164e6314a6cc9ee01ec2cfc8f36311/iframe" },
 { title: "ONE TIME PIN", tag: "BLACKBURN Original", free: true, video: "https://customer-3i7s1ri7gs1vb7n1.cloudflarestream.com/fdb1c87cbc71965afb6a3d505f6191a7/iframe", thumbnail: "/one-time-pin.jpeg" },
-{ title: "NGIKHONA", tag: "BLACKBURN Original", free: true, video: "https://customer-3l7s1r17gs1vb7n1.cloudflarestream.com/4110c63c3018a5720a595f4fa7e8ece/iframe", thumbnail: "https://customer-317s1r17gs1vb7n1.cloudflarestream.com/4110c63c3018a5720a595f4fa7e8ece/thumbnails/thumbnail.jpg" },
+{ title: "NGIKHONA", tag: "BLACKBURN Original", free: true, video: "https://customer-3l7s1r17gs1vb7n1.cloudflarestream.com/4110c63c3018a5720a595f4fa7e8ece/iframe", thumbnail: "ngikhona.jpeg" },
 
   ];
   const brand = "#68653D";
