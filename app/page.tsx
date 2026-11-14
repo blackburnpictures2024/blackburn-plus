@@ -21,16 +21,19 @@ const [isPlus, setIsPlus] = useState(false);
   const brandLight = "#9A9770";
 
   return (
-    <main style={{ background: "black", color: "white", minHeight: "100vh", fontFamily: "sans-serif" }}>
-      <header style={{ display: "flex", justifyContent: "space-between", padding: "20px", alignItems: "center" }}>
-<img src="/logo.png" alt="BLACKBURN+" style={{ width: "100%", maxWidth: "950px", height: "auto", objectFit: "contain" }} />
+    <main style={{ background: "black", color: "white", minHeight: "100vh", margin: 0, padding: 0, position: "relative" }}>
+
+     <header style={{ position: "absolute", top: 0, left: 0, right: 0, zIndex: 10, display: "flex", justifyContent: "space-between", alignItems: "center", padding: "12px 20px", background: "transparent" }}>
+
+
+<img src="/logo.png" alt="BLACKBURN+" style={{ width: "200px", height: "auto", display: "block" }} />
 
 <button onClick={() => setShowJoin(true)} style={{ background: brand, color: "white", border: "none", padding: "10px 18px", borderRadius: "20px", fontWeight: "bold", cursor: "pointer" }}>{isPlus ? "PLUS ACTIVE ✓" : "Join PLUS - R49/mo"}</button>
       </header>
 
   {/* HERO - IZIZWE FULL BACKGROUND */}
 <section style={{
-  minHeight: "85vh",
+  minHeight: "100vh",
   backgroundImage: "url(/hero-banner.jpeg)",
   backgroundSize: "cover",
   backgroundPosition: "center top",
