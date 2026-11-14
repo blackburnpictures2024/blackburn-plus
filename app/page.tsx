@@ -14,6 +14,7 @@ const [isPlus, setIsPlus] = useState(false);
 
   { title: "THE SECOND", tag: "BLACKBURN Original", free: true, video: "https://customer-3i7s1ri7gs1vb7n1.cloudflarestream.com/67e8ee025cca8d5d3e6ca0ec1df26fc5/iframe" },
   { title: "AMAFUNAKONKE", tag: "BLACKBURN Original", free: true, video: "https://customer-3i7s1ri7gs1vb7n1.cloudflarestream.com/06164e6314a6cc9ee01ec2cfc8f36311/iframe" },
+{ title: "ONE TIME PIN", tag: "BLACKBURN Original", free: true, video: "https://customer-3i7s1ri7gs1vb7n1.cloudflarestream.com/fdb1c87cbc71965afb6a3d505f6191a7/iframe" },
 
   ];
   const brand = "#68653D";
