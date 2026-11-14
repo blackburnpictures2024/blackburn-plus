@@ -14,7 +14,8 @@ const [isPlus, setIsPlus] = useState(false);
 
   { title: "THE SECOND", tag: "BLACKBURN Original", free: true, video: "https://customer-3i7s1ri7gs1vb7n1.cloudflarestream.com/67e8ee025cca8d5d3e6ca0ec1df26fc5/iframe" },
   { title: "AMAFUNAKONKE", tag: "BLACKBURN Original", free: true, video: "https://customer-3i7s1ri7gs1vb7n1.cloudflarestream.com/06164e6314a6cc9ee01ec2cfc8f36311/iframe" },
-{ title: "ONE TIME PIN", tag: "BLACKBURN Original", free: true, video: "https://customer-3i7s1ri7gs1vb7n1.cloudflarestream.com/fdb1c87cbc71965afb6a3d505f6191a7/iframe" },
+{ title: "ONE TIME PIN", tag: "BLACKBURN Original", free: true, video: "https://customer-3i7s1ri7gs1vb7n1.cloudflarestream.com/fdb1c87cbc71965afb6a3d505f6191a7/iframe", thumbnail: "/one-time-pin.jpeg" },
+{ title: "NGIKHONA", tag: "BLACKBURN Original", free: true, video: "https://customer-3l7s1r17gs1vb7n1.cloudflarestream.com/4110c63c3018a5720a595f4fa7e8ece/iframe", thumbnail: "https://videodelivery.net/4110c63c3018a5720a595f4fa7e8ece/thumbnails/thumbnail.jpg" },
 
   ];
   const brand = "#68653D";
@@ -79,11 +80,16 @@ const [isPlus, setIsPlus] = useState(false);
         <div style={{ display: "flex", gap: "15px", marginTop: "15px", overflowX: "auto" }}>
          {films.map((f) => (
   <div key={f.title} style={{ minWidth: "200px", background: "#1a1a1a", padding: "10px", borderRadius: "10px" }}>
-    {f.video ? (
-      <iframe src={f.video} style={{ width: "100%", height: "160px", border: "none", borderRadius: "8px" }} allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" allowFullScreen={true}></iframe>
-    ) : (
-      <div style={{ height: "110px", background: "#333", borderRadius: "8px", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "30px" }}>🎬</div>
-    )}
+   {f.thumbnail ? (
+  <a href={f.video} target="_blank">
+    <img src={f.thumbnail} style={{ width: "100%", height: "160px", objectFit: "cover", borderRadius: "8px" }} />
+  </a>
+) : f.video ? (
+  <iframe src={f.video} style={{ width: "100%", height: "160px", borderRadius: "8px" }} />
+) : (
+  <div style={{ height: "110px", background: "#333", borderRadius: "8px" }} />
+)}
+
     <h4 style={{ marginTop: "12px" }}>{f.title}</h4>
     <p style={{ color: "#999", fontSize: "13px" }}>{f.tag}</p>
     <p style={{ color: f.free ? "#4ade80" : "#FFE600", fontWeight: "bold", fontSize: "13px" }}>{f.free ? "FREE" : "PLUS R49"}</p>
