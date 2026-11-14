@@ -31,7 +31,7 @@ const [isPlus, setIsPlus] = useState(false);
   {/* HERO - IZIZWE FULL BACKGROUND */}
 <section style={{
   minHeight: "85vh",
-  backgroundImage: "url(/izizwe.jpg)",
+  backgroundImage: "url(/hero-banner.jpeg)",
   backgroundSize: "cover",
   backgroundPosition: "center top",
   display: "flex",
@@ -45,13 +45,10 @@ const [isPlus, setIsPlus] = useState(false);
 
   {/* LEFT - TEXT FORWARD */}
   <div style={{ position: "relative", zIndex: 2, maxWidth: "600px" }}>
-    <p style={{ color: brandLight, fontWeight: "bold", letterSpacing: "3px", margin: 0 }}>BLACKBURN PLUS ORIGINAL</p>
-    <h2 style={{ fontSize: "48px", margin: "10px 0" }}>Izizwe and the Odd Spirit</h2>
-    <p style={{ color: "#ccc", maxWidth: "500px", fontSize: "18px", lineHeight: "1.5" }}>Innocence turns evil when the night turns green.</p>
-    <div style={{ marginTop: "20px", display: "flex", gap: "10px" }}>
-      <a href="https://customer-3i7s1ri7gs1vb7n1.cloudflarestream.com/263cec5098ad4ff3ce0b60e-boeef35c9/iframe" target="_blank" style={{ background: "#fff", color: "#000", padding: "14px 28px", borderRadius: "6px", fontWeight: "bold", textDecoration: "none" }}>▶ Play Now</a>
-      <a href="https://youtu.be/DHLX15cAQ40" target="_blank" style={{ background: "rgba(255,255,255,0.25)", color: "#fff", padding: "14px 28px", borderRadius: "6px", textDecoration: "none" }}>Watch Trailer</a>
-    </div>
+    <p style={{ color: brandLight, fontWeight: "bold", letterSpacing: "3px", margin: 0 }}>BLACKBURN+ ORIGINAL</p>
+    <h2 style={{ fontSize: "48px", margin: "10px 0" }}>ONE TIME PIN</h2>
+    
+   
   </div>
 </section>
 
