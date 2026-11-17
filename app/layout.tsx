@@ -23,7 +23,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">{children} 
+       <div style={{ textAlign: "center", padding: "30px 0 20px", color: "#888", fontSize: "13px" }}>© 2026 Blackburn Plus. All rights reserved.</div> 
+      </body>
     </html>
   );
 }
