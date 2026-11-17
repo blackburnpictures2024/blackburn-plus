@@ -7,7 +7,7 @@ export default function Home() {
 const [isPlus, setIsPlus] = useState(false);
 
   const films = [
-  { title: "Izizwe and the Odd Spirit", tag: "BLACKBURN+ Original", free: true, video: "https://customer-3i7s1ri7gs1vb7n1.cloudflarestream.com/263cec5098ad4ff3ce0b60eb0eef35c9/iframe", thumbnail: "/izizwe.jpg" },
+  { title: "Izizwe and the Odd Spirit", tag: "BLACKBURN+ Original", free: true, video: "https://customer-3i7s1ri7gs1vb7n1.cloudflarestream.com/263cec5098ad4ff3ce0b60eb0eef35c9/iframe", thumbnail: "/izizwe.jpg"},
 
    { title: "YOUR NEIGHBOURHOOD", tag: "Waterloo 2026 Selection", free: true, video: "https://customer-3i7s1ri7gs1vb7n1.cloudflarestream.com/b988d4fa48be8de4c813aff623500415/iframe", thumbnail: "/Your-neighbourhood.jpg" },
 { title: "THE GRADUATE", tag: "Waterloo 2026 Selection", free: true, video: "https://customer-3i7s1ri7gs1vb7n1.cloudflarestream.com/5cca5934e039de74b29a7f40e74a6a77/iframe", thumbnail: "the-graduate.jpg" },
@@ -18,7 +18,7 @@ const [isPlus, setIsPlus] = useState(false);
 { title: "NGIKHONA", tag: "BLACKBURN Original", free: true, video: "https://customer-3i7s1ri7gs1vb7n1.cloudflarestream.com/4110c63c3018a5720a5951f4fa9e8ece/iframe?poster=https%3A%2F%2Fcustomer-3i7s1ri7gs1vb7n1.cloudflarestream.com%2F4110c63c3018a5720a5951f4fa9e8ece%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600", thumbnail: "/ngikhona.jpeg" },
 
   ];
-  const brand = "#68653D";
+  const brand = "#6866E";
   const brandLight = "#9A9770";
 
   return (
@@ -29,12 +29,12 @@ const [isPlus, setIsPlus] = useState(false);
 
 <img src="/logo.png" alt="BLACKBURN+" style={{ width: "200px", height: "auto", display: "block" }} />
 
-<button onClick={() => setShowJoin(true)} style={{ background: brand, color: "white", border: "none", padding: "10px 18px", borderRadius: "20px", fontWeight: "bold", cursor: "pointer" }}>{isPlus ? "PLUS ACTIVE ✓" : "Join PLUS - R49/mo"}</button>
+<button onClick={() => setShowJoin(true)} style={{ background: brand, color: "#C9A86A", border: "none", padding: "10px 18px", borderRadius: "20px", fontWeight: "bold", cursor: "pointer" }}>{isPlus ? "PLUS ACTIVE ✓" : "Join PLUS - R49/mo"}</button>
       </header>
 
   {/* HERO - IZIZWE FULL BACKGROUND */}
 <section style={{
-  minHeight: "100vh",
+  minHeight: "85vh",
   backgroundImage: "url(/hero-banner.jpeg)",
   backgroundSize: "cover",
   backgroundPosition: "center top",
@@ -44,13 +44,14 @@ const [isPlus, setIsPlus] = useState(false);
   position: "relative",
   boxSizing: "border-box"
 }}>
+  <video autoPlay muted loop playsInline src="/hero.mp4" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", zIndex: 0 }} />
   {/* DARK FADE SO TEXT STAYS READABLE */}
   <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,0.9) 5%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.4) 100%)" }} />
 
   {/* LEFT - TEXT FORWARD */}
   <div style={{ position: "relative", zIndex: 2, maxWidth: "600px" }}>
     <p style={{ color: brandLight, fontWeight: "bold", letterSpacing: "3px", margin: 0 }}>BLACKBURN+ ORIGINAL</p>
-    <h2 style={{ fontSize: "48px", margin: "10px 0" }}>ONE TIME PIN</h2>
+    <h2 style={{ fontSize: "48px", margin: "10px 0" }}>TRENDING NOW</h2>
     
    
   </div>
@@ -92,8 +93,8 @@ const [isPlus, setIsPlus] = useState(false);
 
     <h4 style={{ marginTop: "12px" }}>{f.title}</h4>
     <p style={{ color: "#999", fontSize: "13px" }}>{f.tag}</p>
-    <p style={{ color: f.free ? "#4ade80" : "#FFE600", fontWeight: "bold", fontSize: "13px" }}>{f.free ? "FREE" : "PLUS R49"}</p>
-    {f.video && <a href={f.video} target="_blank" style={{ display: "block", marginTop: "8px", background: "#00FF66", color: "#000", textAlign: "center", padding: "10px", borderRadius: "6px", fontWeight: "bold", textDecoration: "none" }}>▶ WATCH NOW</a>}
+    <p style={{ color: f.free ? "#7A1E2B" : "#7A1E2B", fontWeight: "bold", fontSize: "13px" }}>{f.free ? "FREE" : "PLUS R49"}</p>
+    {f.video && <a href={f.video} target="_blank" style={{ display: "block", marginTop: "8px", background: "#68663E", color: "#000", textAlign: "center", padding: "10px", borderRadius: "6px", fontWeight: "bold", textDecoration: "none" }}>▶ WATCH NOW</a>}
   </div>
 ))}
  
@@ -131,12 +132,12 @@ const [isPlus, setIsPlus] = useState(false);
   <div style={{ position: "fixed", top: 0, left: 0, right: 0, bottom: 0, background: "rgba(0,0,0,0.85)", display: "flex", alignItems: "center", justifyContent: "center", zIndex: 100 }}>
     <div style={{ background: "#1a1a1a", padding: "25px", borderRadius: "12px", width: "90%", maxWidth: "400px", color: "#fff" }}>
       <h3 style={{ margin: "0 0 5px 0" }}>Join BLACKBURN+</h3>
-      <p style={{ color: "#FFE600", fontWeight: "bold", margin: "0 0 15px 0" }}>7 DAYS FREE TRIAL • Then R49/mo • Cancel anytime</p>
+      <p style={{ color: "#7A1E2B", fontWeight: "bold", margin: "0 0 15px 0" }}>7 DAYS FREE TRIAL • Then R49/mo • Cancel anytime</p>
       <p style={{ fontSize: "13px", color: "#aaa" }}>Get access to ALL films, PLUS content, and Waterloo Festival films.</p>
       <input placeholder="Your Name" style={{ width: "100%", padding: "12px", marginBottom: "10px", borderRadius: "6px", border: "none" }} />
       <input placeholder="Email" style={{ width: "100%", padding: "12px", marginBottom: "10px", borderRadius: "6px", border: "none" }} />
       <input placeholder="Phone / WhatsApp" style={{ width: "100%", padding: "12px", marginBottom: "15px", borderRadius: "6px", border: "none" }} />
-      <button onClick={() => { setIsPlus(true); setShowJoin(false); alert("Welcome to PLUS! Your 7-day free trial has started. You can now watch everything."); }} style={{ width: "100%", background: "#00FF66", color: "#000", padding: "14px", border: "none", borderRadius: "8px", fontWeight: "bold", cursor: "pointer" }}>
+      <button onClick={() => { setIsPlus(true); setShowJoin(false); alert("Welcome to PLUS! Your 7-day free trial has started. You can now watch everything."); }} style={{ width: "100%", background: "#68663E", color: "#000", padding: "14px", border: "none", borderRadius: "8px", fontWeight: "bold", cursor: "pointer" }}>
         START 7-DAY FREE TRIAL
       </button>
       <button onClick={() => setShowJoin(false)} style={{ width: "100%", background: "transparent", color: "#aaa", padding: "10px", border: "none", cursor: "pointer", marginTop: "5px" }}>Close</button>
