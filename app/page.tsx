@@ -7,13 +7,13 @@ export default function Home() {
 const [isPlus, setIsPlus] = useState(false);
 
   const films = [
-  { title: "Izizwe and the Odd Spirit", tag: "BLACKBURN+ Original", free: true, video: "https://customer-3i7s1ri7gs1vb7n1.cloudflarestream.com/263cec5098ad4ff3ce0b60eb0eef35c9/iframe" },
+  { title: "Izizwe and the Odd Spirit", tag: "BLACKBURN+ Original", free: true, video: "https://customer-3i7s1ri7gs1vb7n1.cloudflarestream.com/263cec5098ad4ff3ce0b60eb0eef35c9/iframe", thumbnail: "/izizwe.jpg" },
 
-   { title: "YOUR NEIGHBOURHOOD", tag: "Waterloo 2026 Selection", free: true, video: "https://customer-3i7s1ri7gs1vb7n1.cloudflarestream.com/b988d4fa48be8de4c813aff623500415/iframe" },
-{ title: "THE GRADUATE", tag: "Waterloo 2026 Selection", free: true, video: "https://customer-3i7s1ri7gs1vb7n1.cloudflarestream.com/5cca5934e039de74b29a7f40e74a6a77/iframe" },
+   { title: "YOUR NEIGHBOURHOOD", tag: "Waterloo 2026 Selection", free: true, video: "https://customer-3i7s1ri7gs1vb7n1.cloudflarestream.com/b988d4fa48be8de4c813aff623500415/iframe", thumbnail: "/Your-neighbourhood.jpg" },
+{ title: "THE GRADUATE", tag: "Waterloo 2026 Selection", free: true, video: "https://customer-3i7s1ri7gs1vb7n1.cloudflarestream.com/5cca5934e039de74b29a7f40e74a6a77/iframe", thumbnail: "the-graduate.jpg" },
 
-  { title: "THE SECOND", tag: "BLACKBURN Original", free: true, video: "https://customer-3i7s1ri7gs1vb7n1.cloudflarestream.com/67e8ee025cca8d5d3e6ca0ec1df26fc5/iframe" },
-  { title: "AMAFUNAKONKE", tag: "BLACKBURN Original", free: true, video: "https://customer-3i7s1ri7gs1vb7n1.cloudflarestream.com/06164e6314a6cc9ee01ec2cfc8f36311/iframe" },
+  { title: "THE SECOND", tag: "BLACKBURN Original", free: true, video: "https://customer-3i7s1ri7gs1vb7n1.cloudflarestream.com/67e8ee025cca8d5d3e6ca0ec1df26fc5/iframe", thumbnail: "/THE-SECOND.jpg" }, 
+  { title: "AMAFUNAKONKE", tag: "BLACKBURN Original", free: true, video: "https://customer-3i7s1ri7gs1vb7n1.cloudflarestream.com/06164e6314a6cc9ee01ec2cfc8f36311/iframe", thumbnail: "/amafunakonke.jpg" }, 
 { title: "ONE TIME PIN", tag: "BLACKBURN Original", free: true, video: "https://customer-3i7s1ri7gs1vb7n1.cloudflarestream.com/fdb1c87cbc71965afb6a3d505f6191a7/iframe", thumbnail: "/one-time-pin.jpeg" },
 { title: "NGIKHONA", tag: "BLACKBURN Original", free: true, video: "https://customer-3i7s1ri7gs1vb7n1.cloudflarestream.com/4110c63c3018a5720a5951f4fa9e8ece/iframe?poster=https%3A%2F%2Fcustomer-3i7s1ri7gs1vb7n1.cloudflarestream.com%2F4110c63c3018a5720a5951f4fa9e8ece%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600", thumbnail: "/ngikhona.jpeg" },
 
